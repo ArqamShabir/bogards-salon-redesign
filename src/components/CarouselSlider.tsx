@@ -84,7 +84,7 @@ const CarouselSlider = ({
       {canScrollLeft && (
         <button
           onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-10 h-10 rounded-full bg-card shadow-lg border flex items-center justify-center text-foreground hover:bg-accent transition-colors opacity-0 group-hover:opacity-100 z-10"
+          className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-3 w-10 h-10 rounded-full bg-card shadow-lg border flex items-center justify-center text-foreground hover:bg-accent hover:text-white transition-colors opacity-0 group-hover:opacity-100 z-10"
           aria-label="Previous"
         >
           <ChevronLeft size={20} />
@@ -93,7 +93,7 @@ const CarouselSlider = ({
       {canScrollRight && (
         <button
           onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-10 h-10 rounded-full bg-card shadow-lg border flex items-center justify-center text-foreground hover:bg-accent transition-colors opacity-0 group-hover:opacity-100 z-10"
+          className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-3 w-10 h-10 rounded-full bg-card shadow-lg border flex items-center justify-center text-foreground hover:bg-accent hover:text-white transition-colors opacity-0 group-hover:opacity-100 z-10"
           aria-label="Next"
         >
           <ChevronRight size={20} />

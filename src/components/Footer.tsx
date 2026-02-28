@@ -6,14 +6,13 @@ import { BOOKING_URL, PHONE, EMAIL, ADDRESS, FACEBOOK_URL, INSTAGRAM_URL } from 
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden">
-      {/* Top CTA Band */}
-      <div className="bg-primary py-12">
+      <div className="bg-gradient-to-r from-primary via-primary/90 to-primary py-14">
         <div className="container text-center">
-          <h2 className="font-display text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
-            Ready for a New Look?
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-primary-foreground mb-2">
+            Ready for a Fresh Look?
           </h2>
-          <p className="text-primary-foreground/80 mb-6 text-sm">
-            Book your appointment today and let our stylists work their magic.
+          <p className="text-primary-foreground/85 mb-6 text-sm md:text-base">
+            Reserve your chair and let our team craft your next signature style.
           </p>
           <Button asChild variant="hero" size="lg">
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
@@ -23,22 +22,19 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer */}
       <div className="bg-foreground text-background">
         <div className="container py-14">
           <div className="grid md:grid-cols-4 gap-10">
-            {/* Brand */}
             <div className="md:col-span-1">
               <Link to="/" className="font-display text-2xl font-bold tracking-tight inline-flex items-center gap-2">
                 <Scissors size={20} className="text-primary" />
                 Bogards Salon
               </Link>
-              <p className="text-sm text-background/60 mt-3 leading-relaxed">
-                A Redken Exclusive Salon in Hagerstown, MD. Professionalism with an element of fun.
+              <p className="text-sm text-background/70 mt-3 leading-relaxed">
+                Professional styling, color, texture, and finishing services in Hagerstown, Maryland.
               </p>
             </div>
 
-            {/* Quick Links */}
             <div>
               <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-background/50">Navigation</h4>
               <ul className="space-y-2.5">
@@ -56,7 +52,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact */}
             <div>
               <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-background/50">Contact</h4>
               <div className="space-y-2.5">
@@ -72,7 +67,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Social */}
             <div>
               <h4 className="font-semibold text-sm uppercase tracking-wider mb-4 text-background/50">Follow Us</h4>
               <div className="flex gap-3">
@@ -99,15 +93,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="border-t border-background/10">
           <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-background/40">
-              © {new Date().getFullYear()} Bogards Salon. All rights reserved.
+              Copyright {new Date().getFullYear()} Bogards Salon. All rights reserved.
             </p>
-            <p className="text-xs text-background/40">
-              Powered by Redken
-            </p>
+            <p className="text-xs text-background/40">Redken Exclusive Salon</p>
           </div>
         </div>
       </div>

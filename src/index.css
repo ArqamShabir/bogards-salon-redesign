@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -6,33 +6,33 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
-    --foreground: 220 20% 20%;
+    --background: 36 42% 97%;
+    --foreground: 22 20% 16%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 20%;
+    --card-foreground: 22 20% 16%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 20%;
+    --popover-foreground: 22 20% 16%;
 
-    --primary: 0 72% 42%;
+    --primary: 16 72% 44%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 20% 93%;
-    --secondary-foreground: 220 20% 20%;
+    --secondary: 34 36% 90%;
+    --secondary-foreground: 22 20% 16%;
 
-    --muted: 40 15% 94%;
-    --muted-foreground: 220 10% 50%;
+    --muted: 32 20% 93%;
+    --muted-foreground: 22 10% 40%;
 
-    --accent: 0 72% 42%;
+    --accent: 16 72% 44%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 40 15% 88%;
-    --input: 40 15% 88%;
-    --ring: 0 72% 42%;
+    --border: 32 20% 84%;
+    --input: 32 20% 84%;
+    --ring: 16 72% 44%;
 
     --radius: 0.75rem;
 
@@ -45,7 +45,7 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --hero-overlay: 220 20% 10%;
+    --hero-overlay: 25 22% 12%;
   }
 
   .dark {
@@ -82,9 +82,16 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
+    background-image: radial-gradient(circle at 8% 4%, hsl(24 76% 95%), transparent 30%),
+      radial-gradient(circle at 90% 12%, hsl(35 55% 92%), transparent 35%);
+    background-attachment: fixed;
   }
 
   h1, h2, h3, h4 {
     @apply font-display;
+  }
+
+  section {
+    @apply relative;
   }
 }
